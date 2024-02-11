@@ -1,0 +1,132 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/*********************************
+*                                *
+*    Header Layouts              *
+*                                *
+**********************************/
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5em 1.25em;
+}
+
+.color {
+    width: 3.75em;
+}
+
+.scheme {
+    width: 19.5em;    
+}
+
+.btn-scheme {
+    font-family: 'Inter', sans-serif;
+    /* padding: 1.5em 1.125em; */
+    padding: 1.125em; 
+    font-size: 0.75rem;
+    background: #fff;
+    
+}
+
+
+/*********************************
+*                                *
+*    Color Layout                *
+*                                *
+**********************************/
+.scheme-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100vw;
+    height: 75vh;
+    /* border: 1px solid red; */
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+.color-container {
+    width: 20vw;
+    min-height: 90vh;
+    /* flex-grow: 6; */
+    /* border: 1px solid red; */
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.color-bg-container {
+    height: 100vh;
+}
+
+.color-hex-container {
+    padding: 1em;
+}
+
+/*********************************
+*                                *
+*    Clipboard Layout Layouts    *
+*                                *
+**********************************/
+.copy-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.copy-message {
+    border-radius: 5em;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    padding: .5em;
+    transition-duration: .5s;
+    transition-property: transform, opacity;
+    text-align: center;
+}
+
+.slide-down {
+    transform: translate(0, 100%);
+    opacity: 0;
+}
+
+/*********************************
+*                                *
+*    Combination Layout          *
+*                                *
+**********************************/
+
+.header,
+.scheme-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.btn-scheme,
+.color,
+.scheme {
+    border: 1px solid #d1d5db;
+    border-radius: 0.3125em;
+}
+
+.color,
+.scheme {
+    height: 2.625em;    
+}
+
